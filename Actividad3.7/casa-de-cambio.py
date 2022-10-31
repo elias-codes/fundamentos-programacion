@@ -13,14 +13,22 @@ pesos = 0
 
 print("Bienvenido a ",NOMBRE_CASA)
 print("Este programa convierte su cheque en dolares a pesos")
+print("Este servicio tiene una comision de", COMISION, "pesos")
 
 # Solicitamos el nombre y lugar de trabajo al 
 
 nombreCliente = input("Favor de introducir su nombre: ")
-lugarTrabajo = input("Favor de introducir su lugar de trabajo")
+lugarTrabajo = input("Favor de introducir su lugar de trabajo: ")
 
 # Aqui solicitamos la cantidad de dolares a cambiar
 
 dolares = int(input("Introduzca los dolares de su cheque"))
 
 # Convertimos la cantidad a pesos y restamos la comision
+
+pesos = dolares / tipoDeCambio - 70
+
+# Mostramos el resultado de la operacion
+
+print("Bienvenido", nombreCliente, "de",lugarTrabajo)
+print()
