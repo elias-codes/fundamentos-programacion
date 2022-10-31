@@ -1,6 +1,6 @@
 # Este programa cambia el cheque de los trabajadores 
 # de pesos a dolares y cobra una comision de 70 MXN
-tipoDeCambio = 19.5
+tipoDeCambio = 20
 COMISION = 70
 NOMBRE_CASA = 'Casa de cambio Playas'
 nombreCliente = ''
@@ -13,22 +13,22 @@ pesos = 0
 
 print("Bienvenido a ",NOMBRE_CASA)
 print("Este programa convierte su cheque en dolares a pesos")
-print("Este servicio tiene una comision de", COMISION, "pesos")
+print("Este servicio tiene una comision de $"+str(COMISION)+" pesos")
 
 # Solicitamos el nombre y lugar de trabajo al 
 
-nombreCliente = input("Favor de introducir su nombre: ")
-lugarTrabajo = input("Favor de introducir su lugar de trabajo: ")
+nombreCliente = input("> Favor de introducir su nombre: ")
+lugarTrabajo = input("> Favor de introducir su lugar de trabajo: ")
 
 # Aqui solicitamos la cantidad de dolares a cambiar
 
-dolares = int(input("Introduzca los dolares de su cheque"))
+dolares = int(input("> Introduzca los dolares de su cheque: "))
 
 # Convertimos la cantidad a pesos y restamos la comision
 
-pesos = dolares / tipoDeCambio - 70
+pesos = dolares * tipoDeCambio - 70
 
 # Mostramos el resultado de la operacion
 
 print("Bienvenido", nombreCliente, "de",lugarTrabajo)
-print()
+print("Su cheque en pesos es de: $"+str(pesos))
