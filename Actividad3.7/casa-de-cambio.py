@@ -28,7 +28,11 @@ dolares = int(input("> Introduzca los dolares de su cheque: "))
 
 pesos = dolares * tipoDeCambio - 70
 
+# Convierte el formato del resultado a dos decimales
+
+resultado = "{:.2f}".format(pesos)
+
 # Mostramos el resultado de la operacion
 
 print("Bienvenido", nombreCliente, "de",lugarTrabajo)
-print("Su cheque en pesos es de: $"+str(pesos))
+print("Su cheque en pesos es de: $"+str(resultado))
