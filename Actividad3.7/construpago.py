@@ -14,3 +14,10 @@ bloques = int(input("Favor de introducir la cantidad de bloques colocados: "))
 desperdicio = int(input("Introduzca la cantidad de bloques desperdiciados: "))
 gastos = int(input("Cuando gasto en la tienda?: "))
 
+#Calculamos el pago del dia
+
+pago = bloques * VALOR_BLOQUE - desperdicio * VALOR_DESPERDICIO - gastos
+
+#Muestra el resultado
+
+print("El pago del dia sera de: $"+str(pago))
