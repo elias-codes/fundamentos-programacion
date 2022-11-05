@@ -10,7 +10,6 @@ pesos = 0
 
 # Aqui se muestra el mensaje de bienvenida
 # y el nombre de la casa de cambio
-
 print("Bienvenido a ",NOMBRE_CASA)
 print("Este programa convierte su cheque en dolares a pesos")
 print("Este servicio tiene una comision de $"+str(COMISION)+" pesos")
