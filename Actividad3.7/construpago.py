@@ -12,4 +12,5 @@ print("Este programa calcula la cantidad a pagar al trabajador")
 
 bloques = int(input("Favor de introducir la cantidad de bloques colocados: "))
 desperdicio = int(input("Introduzca la cantidad de bloques desperdiciados: "))
+gastos = int(input("Cuando gasto en la tienda?: "))
 
