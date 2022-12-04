@@ -14,17 +14,17 @@ while (True):
     edad = int(input("Edad: "))
     sexo = input("Genero: ")
     ingreso = int(input("Ingreso mensual: "))
-    municipio = input("""Seleccione su municipio:
-    Tijuana = T
-    Ensenada = E
-    Mexicali = M
-    Tecate = T
-    San Quintin = S 
-    """)
+    municipio = int(input("""Seleccione su municipio:
+    1 = Tijuana
+    2 = Ensenada
+    3 = Mexicali
+    4 = Rosarito
+    5 = San Quintin
+    """))
     #Revisamos la edad del usuario
     if edad >= 18:
         #Checamos el municipio del usuario
-        if municipio == "T":
+        if municipio == 1:
             #Comparamos los ingresos
             if ingreso >= TIJUANA:
                 #Cumple con los requisitos imprimimos mensaje
@@ -38,6 +38,13 @@ while (True):
                 print("Usted no cumple con los ingresos minimos")
     else:
         #No es mayor de edad
-        print("Es necesario ser mayord de edad para declarar")    
+        print("Es necesario ser mayord de edad para declarar")  
+    #pregunta de salida
+    salida = input("Desea continuar en el programa? (si/no): ")  
+    if salida == "no":
+        break
+#mensaje de salida
+print("Gracias por utilizar el servicio de SUPERSAT")
+    
         
 
