@@ -78,19 +78,7 @@ while (True):
             else:
                 #Si no tiene el ingreso necesario
                 print("Usted no cumple con los ingresos minimos")
-        elif municipio == 4:
-            #Comparamos los ingresos
-            if ingreso >= TECATE:
-                #Cumple con los requisitos imprimimos mensaje
-                print("Hola",nombre)
-                print("Sus datos son: ")
-                print("Edad:",edad)
-                print("Municipio: Tecate")
-                print("Usted puede declarar")
-            else:
-                #Si no tiene el ingreso necesario
-                print("Usted no cumple con los ingresos minimos")
-
+        
         elif municipio == 5:
             #Comparamos los ingresos
             if ingreso >= SANQ:
