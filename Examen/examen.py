@@ -21,3 +21,23 @@ while (True):
     Tecate = T
     San Quintin = S 
     """)
+    #Revisamos la edad del usuario
+    if edad >= 18:
+        #Checamos el municipio del usuario
+        if municipio == "T":
+            #Comparamos los ingresos
+            if ingreso >= TIJUANA:
+                #Cumple con los requisitos imprimimos mensaje
+                print("Hola",nombre)
+                print("Sus datos son: ")
+                print("Edad:",edad)
+                print("Municipio: Tijuana")
+                print("Usted puede declarar")
+            else:
+                #Si no tiene el ingreso necesario
+                print("Usted no cumple con los ingresos minimos")
+    else:
+        #No es mayor de edad
+        print("Es necesario ser mayord de edad para declarar")    
+        
+
