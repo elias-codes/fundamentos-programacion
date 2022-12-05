@@ -1,10 +1,10 @@
 #Este programa nos indica si podemos hacer una declaracion de impuestos
 #Declarar constantes
-TIJUANA = 100000
-ENSENADA = 80000
-MEXICALI = 90000
-TECATE = 70000
-SANQ = 50000
+TIJUANA = 100000 / 12
+ENSENADA = 80000 / 12
+MEXICALI = 90000 / 12
+TECATE = 70000 / 12
+SANQ = 50000 / 12
 
 #Imprimimos el mensaje de bienvenida
 print("Bienvenido a SUPERSAT")
